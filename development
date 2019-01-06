@@ -1,0 +1,3 @@
+# list all file (filetype jpg, mov, mp4) including dtm from xmp or Exif meta file
+step 1:
+list exif data of jpg in a csv type file directory,filename,exif:(d,m,y,hhmm), xmp:(d,m,y,hhmm) 10 colons
