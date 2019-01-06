@@ -10,3 +10,6 @@ exiftool "-filename<CreateDate" -d IMG_%Y%m%d_%H%M%S_%%f%%c.%%le  -progress -ext
 
 # (2) Videos:   
 exiftool "-filename<xmp:dateTimeOriginal" -d IMG_%Y%m%d_%H%M%S_%%f%%c.%%le -ext mov -ext mp4 -overwrite_original -progress F:\handy-Flora\1
+
+# list all files with exif date and name in a file /xmp date are missing
+exiftool -csv  -filename -CreateDate -progress /var/services/photo/archiv -r > /var/services/photo/tab_allfiles_dtm.csv
