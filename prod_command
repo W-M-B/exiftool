@@ -13,3 +13,6 @@ exiftool "-filename<xmp:dateTimeOriginal" -d IMG_%Y%m%d_%H%M%S_%%f%%c.%%le -ext 
 
 # list all files with exif date and name in a file /xmp date are missing
 exiftool -csv -filename -CreateDate -XMP-exif:DateTimeOriginal -progress /var/services/photo/Archiv/ > /var/services/photo/tab_allfiles_dtm_local.csv -i @eaDir
+
+#just run dateinfo it for one file
+exiftool -csv -filename -CreateDate -XMP-exif:DateTimeOriginal p:\repaired\MOV_0182.mp4
